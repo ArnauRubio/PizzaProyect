@@ -29,7 +29,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="TextView" />
+                android:text="@string/textview" />
         </LinearLayout>
 
         <LinearLayout
@@ -40,13 +40,15 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                tools:ignore="UselessParent">
 
                 <ImageView
                     android:id="@+id/imageView2"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:importantForAccessibility="no"
                     android:src="@drawable/images" />
             </LinearLayout>
         </LinearLayout>
@@ -57,32 +59,37 @@
             android:orientation="horizontal">
 
             <EditText
-                android:id="@+id/editTextText2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:inputType="text"
-                android:text="Name" />
-
-            <EditText
-                android:id="@+id/editTextText3"
+                android:id="@+id/et_Masa"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:autofillHints=""
                 android:ems="10"
                 android:inputType="text"
-                android:text="Name" />
+                android:text="@string/masa"
+                tools:ignore="LabelFor" />
 
             <EditText
-                android:id="@+id/editTextText4"
+                android:id="@+id/et_Salsa"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:autofillHints=""
                 android:ems="10"
                 android:inputType="text"
-                android:text="Name" />
+                android:text="@string/salsa"
+                tools:ignore="LabelFor,TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/et_Ingredientes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints=""
+                android:ems="10"
+                android:inputType="text"
+                android:text="@string/ingredientes"
+                tools:ignore="LabelFor" />
         </LinearLayout>
 
         <LinearLayout
@@ -91,12 +98,14 @@
             android:orientation="vertical">
 
             <EditText
-                android:id="@+id/editTextText5"
+                android:id="@+id/et_Cabecera1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:autofillHints=""
                 android:ems="10"
+                android:hint="@string/elije_tu_tama_o"
                 android:inputType="text"
-                android:text="Name" />
+                android:textColorHint="#546E7A" />
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -105,35 +114,36 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal" >
+                    android:orientation="horizontal"
+                    tools:ignore="UselessParent">
 
                     <RadioButton
-                        android:id="@+id/radioButton7"
+                        android:id="@+id/rb_Ssize"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="RadioButton" />
+                        android:text="@string/s" />
 
                     <RadioButton
-                        android:id="@+id/radioButton8"
+                        android:id="@+id/rb_Msize"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="RadioButton" />
+                        android:text="@string/m" />
 
                     <RadioButton
-                        android:id="@+id/radioButton9"
+                        android:id="@+id/rb_Lsize"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="RadioButton" />
+                        android:text="@string/l" />
 
                     <RadioButton
-                        android:id="@+id/radioButton10"
+                        android:id="@+id/rb_XLsize"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="RadioButton" />
+                        android:text="@string/xl" />
                 </LinearLayout>
             </RadioGroup>
 
@@ -145,10 +155,10 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/tv_cabecera2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:hint="@string/tipo_de_masa" />
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -157,21 +167,22 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    tools:ignore="UselessParent">
 
                     <RadioButton
-                        android:id="@+id/radioButton16"
+                        android:id="@+id/rb_masaClasica"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="RadioButton" />
+                        android:text="@string/clasica" />
 
                     <RadioButton
-                        android:id="@+id/radioButton13"
+                        android:id="@+id/rb_masaIntegral"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="RadioButton" />
+                        android:text="@string/integral" />
                 </LinearLayout>
 
             </RadioGroup>
@@ -183,21 +194,22 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    tools:ignore="UselessParent">
 
                     <RadioButton
-                        android:id="@+id/radioButton15"
+                        android:id="@+id/rb_masaSinGluten"
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/sin_gluten" />
+
+                    <RadioButton
+                        android:id="@+id/rb_masaFina"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="RadioButton" />
-
-                    <RadioButton
-                        android:id="@+id/radioButton14"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="RadioButton" />
+                        android:text="@string/finisima" />
                 </LinearLayout>
             </RadioGroup>
 
@@ -205,15 +217,15 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/tv_selecIngredientes"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:hint="@string/ingredientes_seleccionados" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -221,40 +233,40 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
-                    android:layout_width="312dp"
+                    android:layout_width="219dp"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
 
                     <CheckBox
-                        android:id="@+id/checkBox10"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:id="@+id/cb_peperoni"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
                         android:layout_weight="1"
-                        android:text="CheckBox" />
+                        android:text="@string/peperoni" />
 
                     <CheckBox
-                        android:id="@+id/checkBox9"
-                        android:layout_width="match_parent"
+                        android:id="@+id/cb_pimiento"
+                        android:layout_width="220dp"
                         android:layout_height="wrap_content"
-                        android:text="CheckBox" />
+                        android:text="@string/pimineto" />
 
                     <CheckBox
-                        android:id="@+id/checkBox8"
+                        android:id="@+id/cb_atun"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="CheckBox" />
+                        android:text="@string/atun" />
 
                     <CheckBox
-                        android:id="@+id/checkBox7"
+                        android:id="@+id/cb_Jserrano"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="CheckBox" />
+                        android:text="@string/jamon_serrano" />
 
                     <CheckBox
-                        android:id="@+id/checkBox"
+                        android:id="@+id/cb_piña"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="CheckBox" />
+                        android:text="@string/pi_a" />
 
                 </LinearLayout>
 
@@ -264,44 +276,44 @@
                     android:orientation="vertical">
 
                     <CheckBox
-                        android:id="@+id/checkBox6"
+                        android:id="@+id/cb_maiz"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="CheckBox" />
+                        android:text="@string/maiz" />
 
                     <CheckBox
-                        android:id="@+id/checkBox5"
+                        android:id="@+id/cb_champis"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="CheckBox" />
+                        android:text="@string/champis" />
 
                     <CheckBox
-                        android:id="@+id/checkBox4"
+                        android:id="@+id/cb_JYork"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="CheckBox" />
+                        android:text="@string/jamon_york" />
 
                     <CheckBox
-                        android:id="@+id/checkBox3"
+                        android:id="@+id/cb_olivas"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="CheckBox" />
+                        android:text="@string/olivas_negras" />
 
                     <CheckBox
-                        android:id="@+id/checkBox2"
+                        android:id="@+id/cb_quesos"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="CheckBox" />
+                        android:text="@string/_4_quesos" />
 
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
 
         <Button
-            android:id="@+id/button28"
+            android:id="@+id/b_pago"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
-            android:text="Button" />
+            android:text="@string/continuar_al_pago"
+            app:layout_constraintStart_toStartOf="parent" />
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>
