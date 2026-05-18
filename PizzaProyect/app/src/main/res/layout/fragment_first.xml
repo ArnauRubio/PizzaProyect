@@ -68,7 +68,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="18dp"
-                android:text="Elige ingredientes, tamaño y masa. Entregamos en 30 minutos."
+                android:text="@string/elige_ingredientes_tama_o_y_masa_entregamos_en_30_minutos"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txtDescripcion1"
                 app:layout_constraintBottom_toTopOf="@+id/btnCrearPizza"/>
@@ -77,7 +77,7 @@
                 android:id="@+id/btnCrearPizza"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Crear mi pizza"
+                android:text="@string/crear_mi_pizza"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txtDescripcion2"
